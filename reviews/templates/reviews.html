@@ -1,1 +1,15 @@
 {% extends "base.html" %}
+
+{% block content %}
+    <h1>Книга отзывов от мистера Пу</h1>
+    <div class="review-form">
+        <h2>Оставить отзыв</h2>
+        <form>
+            <input type="text" placeholder="Введите ваше имя">
+            <input type="email" placeholder="Введите почту">
+        </form>
+    </div>
+    <div class="reviews">
+        <h2>Все отзывы</h2>
+    </div>
+{% endblock %}

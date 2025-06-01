@@ -1,0 +1,19 @@
+body {
+    background-image: url(../images/flag-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain ;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #00ffbb;
+}
+
+h1 {
+    font-size: 35px;
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
