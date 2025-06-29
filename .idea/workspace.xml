@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d606508-134c-44f1-9a77-81f8b8fc5050" name="Changes" comment="working on form">
+    <list default="true" id="5d606508-134c-44f1-9a77-81f8b8fc5050" name="Changes" comment="frontend done">
+      <change afterPath="$PROJECT_DIR$/reviews/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reviews/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/reviews/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reviews/templates/reviews.html" beforeDir="false" afterPath="$PROJECT_DIR$/reviews/templates/reviews.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reviews/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/reviews/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -119,7 +122,7 @@
       <workItem from="1747938300824" duration="98000" />
       <workItem from="1747938417026" duration="3051000" />
       <workItem from="1748776548521" duration="2448000" />
-      <workItem from="1749985710280" duration="1512000" />
+      <workItem from="1749985710280" duration="6437000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -169,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748778937910</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="frontend done">
+      <option name="closed" value="true" />
+      <created>1749987495779</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749987495779</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +193,7 @@
     <MESSAGE value="working on html" />
     <MESSAGE value="try to add favicon" />
     <MESSAGE value="working on form" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on form" />
+    <MESSAGE value="frontend done" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend done" />
   </component>
 </project>

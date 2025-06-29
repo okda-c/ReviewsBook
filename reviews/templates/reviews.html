@@ -5,17 +5,44 @@
         <h1>Книга отзывов от мистера Пу</h1>
         <div class="review-form">
             <h2>Оставить отзыв</h2>
-            <form>
-                <input type="text" placeholder="Введите ваше имя" required>
-                <input type="email" placeholder="Введите почту" required>
-                <br>
-                <textarea cols="46" rows="5" placeholder="Напишите отзыв" required></textarea>
-                <br>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
                 <input type="submit" value="Оставить отзыв">
             </form>
         </div>
-        <div class="reviews">
-            <h2>Все отзывы</h2>
+     <div class="reviews">
+    <h2>Все отзывы</h2>
+
+  {% comment %}  <div class="review-card">
+        <div class="review-header">
+            <span class="review-author">{{ name1 }}</span>
+            <span class="review-email">{{ email1 }}</span>
+            <span class="review-date">• {{ name1 }}</span>
         </div>
+        <div class="review-content">
+            <p>{{ review1 }}</p>
+        </div>
+        <div class="review-rating">
+            <span class="stars">★★★★★</span>
+        </div>
+    </div>
+
+    <div class="review-card">
+        <div class="review-header">
+            <span class="review-author">{{ name1 }}</span>
+            <span class="review-email">{{ email1 }}</span>
+            <span class="review-date">• {{ name1 }}</span>
+        </div>
+        <div class="review-content">
+            <p>{{ review1 }}</p>
+        </div>
+        <div class="review-rating">
+            <span class="stars">★★★★☆</span>
+        </div>
+    </div>{% endcomment %}
+
+
+</div>
     </div>
 {% endblock %}
