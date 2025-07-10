@@ -1,13 +1,11 @@
 from django.shortcuts import render, redirect
 
 from reviews.forms import ReviewForm
+from reviews.models import Review
 
 
 def reviews(request):
-    if request.method == "GET":
-        form = ReviewForm()
-        return render(request, 'reviews.html', {'form': form})
-    elif request.method == "POST":
+    if request.method == "POST":
         form = ReviewForm(request.POST)
         if form.is_valid():
             data = form.cleaned_data
@@ -16,7 +14,10 @@ def reviews(request):
             email = data.get("email")
             review = data.get('review')
             rating = data.get('rating')
+            Review.objects.create(name=name, email=email, review=review, rating=rating)
+
             return redirect("reviews")
-        else:
-            form = ReviewForm()
-            return render(request, 'reviews.html', {'form': form})
+
+    form = ReviewForm()
+    reviews = Review.objects.all()
+    return render(request, 'reviews.html', {'form': form, 'reviews': reviews})

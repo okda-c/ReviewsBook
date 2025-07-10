@@ -14,34 +14,23 @@
      <div class="reviews">
     <h2>Все отзывы</h2>
 
-  {% comment %}  <div class="review-card">
-        <div class="review-header">
-            <span class="review-author">{{ name1 }}</span>
-            <span class="review-email">{{ email1 }}</span>
-            <span class="review-date">• {{ name1 }}</span>
-        </div>
-        <div class="review-content">
-            <p>{{ review1 }}</p>
-        </div>
-        <div class="review-rating">
-            <span class="stars">★★★★★</span>
-        </div>
-    </div>
-
+{% for review in reviews %}
     <div class="review-card">
         <div class="review-header">
-            <span class="review-author">{{ name1 }}</span>
-            <span class="review-email">{{ email1 }}</span>
-            <span class="review-date">• {{ name1 }}</span>
+            <span class="review-author">{{ review.name }}</span>
+            <span class="review-email">{{ review.email }}</span>
         </div>
         <div class="review-content">
-            <p>{{ review1 }}</p>
+            <p>{{ review.review }}</p>
         </div>
         <div class="review-rating">
-            <span class="stars">★★★★☆</span>
-        </div>
-    </div>{% endcomment %}
 
+            <span class="stars">★</span>
+
+            <span class="review-date"> {{ review.rating }}/10</span>
+        </div>
+    </div>
+{% endfor %}
 
 </div>
     </div>
